@@ -34,5 +34,8 @@ public class Principal {
 		}
 		temporadas.forEach(System.out::println);
 
+        //modelando episódios usando lambdas
+        temporadas.forEach(t-> t.episodio().forEach(e -> System.out.println(e.titulo())));
+
     }
 }
